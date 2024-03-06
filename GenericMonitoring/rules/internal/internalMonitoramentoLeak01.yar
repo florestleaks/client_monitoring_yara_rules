@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_awsapi_1
+rule internalMonitoramentoLeak01
 {
     meta:
         author = "@ntddk"
