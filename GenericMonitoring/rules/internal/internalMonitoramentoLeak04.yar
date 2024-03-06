@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_shodanapi_1 {
+rule internalMonitoramentoLeak04 {
     meta:
         author = "Dylan Katz (@Plazmaz)"
         description = "Shodan API Keys (Created as part of PasteHunter)"

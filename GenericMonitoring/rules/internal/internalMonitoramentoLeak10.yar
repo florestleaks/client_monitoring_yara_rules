@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_slackapi_1
+rule internalMonitoramentoLeak10
 {
     meta:
         author = "@ntddk"
@@ -6,8 +6,7 @@ rule GlobalMonitoring_GenericClient_slackapi_1
         reference = "https://github.com/kevthehermit/PasteHunter"
 
     strings:
-        $a = /(xox(p|b|o|a)-[0-9]{9,12}-[0-9]{9,12}-[0-9]{9,12}-[a-z0-9]{32})/
-        $b = "hooks.slack.com" nocase
+        $a = /[g|G][i|I][t|T][h|H][u|U][b|B].*[[\'|"]0-9a-zA-Z]{35,40}[\'|"]/
     condition:
         any of them
 }

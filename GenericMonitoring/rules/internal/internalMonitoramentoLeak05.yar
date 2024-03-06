@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_pivotaltoken_1 {
+rule internalMonitoramentoLeak05 {
     meta:
         author = "Dylan Katz (@Plazmaz)"
         description = "PivotalTracker token (Created as part of PasteHunter)"

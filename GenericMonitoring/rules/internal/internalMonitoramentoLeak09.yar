@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_githubhomebrew_1 {
+rule internalMonitoramentoLeak09 {
     meta:
         author = "Dylan Katz (@Plazmaz)"
         description = "Homebrew github tokens (Created as part of PasteHunter)"

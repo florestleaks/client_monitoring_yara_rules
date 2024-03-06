@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_herokuapi_1
+rule internalMonitoramentoLeak12
 {
     meta:
         author = "@ntddk"
@@ -6,8 +6,8 @@ rule GlobalMonitoring_GenericClient_herokuapi_1
         reference = "https://github.com/kevthehermit/PasteHunter"
 
     strings:
-        $a = /[h|H][e|E][r|R][o|O][k|K][u|U].*[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}/
+        $a = "DiscordRelay.BotToken" nocase
+        $b = "discordapp.com/api/webhooks" nocase
     condition:
         any of them
 }
-

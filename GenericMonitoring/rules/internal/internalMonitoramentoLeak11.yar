@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_genericapi_1
+rule internalMonitoramentoLeak11
 {
     meta:
         author = "@KevTheHermit"

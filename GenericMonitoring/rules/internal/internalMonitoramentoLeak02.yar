@@ -1,4 +1,5 @@
-rule GlobalMonitoring_GenericClient_twitterapi_1
+rule internalMonitoramentoLeak02
+
 {
     meta:
         author = "@KevTheHermit"

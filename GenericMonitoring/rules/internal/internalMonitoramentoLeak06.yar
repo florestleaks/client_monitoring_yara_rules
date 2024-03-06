@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_JekyllGitHub_1 {
+rule internalMonitoramentoLeak06 {
     meta:
         author = "Dylan Katz (@Plazmaz)"
         description = "Jekyll Token for GitHub (Created as part of PasteHunter)"

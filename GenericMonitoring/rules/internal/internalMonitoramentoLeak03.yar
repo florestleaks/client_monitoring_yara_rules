@@ -1,4 +1,4 @@
-rule GlobalMonitoring_GenericClient_discordapi_1
+rule internalMonitoramentoLeak03
 {
     meta:
         author = "@ntddk"
@@ -6,8 +6,8 @@ rule GlobalMonitoring_GenericClient_discordapi_1
         reference = "https://github.com/kevthehermit/PasteHunter"
 
     strings:
-        $a = "DiscordRelay.BotToken" nocase
-        $b = "discordapp.com/api/webhooks" nocase
+        $a = /(xox(p|b|o|a)-[0-9]{9,12}-[0-9]{9,12}-[0-9]{9,12}-[a-z0-9]{32})/
+        $b = "hooks.slack.com" nocase
     condition:
         any of them
 }

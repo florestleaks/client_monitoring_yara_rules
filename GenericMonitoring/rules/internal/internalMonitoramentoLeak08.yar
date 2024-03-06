@@ -1,12 +1,13 @@
-rule GlobalMonitoring_GenericClient_githubapi_1
+rule internalMonitoramentoLeak08
 {
     meta:
-        author = "@ntddk"
+        author = "@KevTheHermit"
         info = "Part of PasteHunter"
         reference = "https://github.com/kevthehermit/PasteHunter"
 
     strings:
-        $a = /[g|G][i|I][t|T][h|H][u|U][b|B].*[[\'|"]0-9a-zA-Z]{35,40}[\'|"]/
+        $a = /\bAIza.{35}\b/
     condition:
         any of them
 }
+
