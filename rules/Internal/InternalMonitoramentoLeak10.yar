@@ -1,4 +1,4 @@
-rule internalMonitoramentoLeak10
+rule InternalMonitoramentoLeak10
 {
     meta:
         author = "@ntddk"

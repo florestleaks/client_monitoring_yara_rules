@@ -1,4 +1,4 @@
-rule internalMonitoramentoLeak05 {
+rule InternalMonitoramentoLeak05 {
     meta:
         author = "Dylan Katz (@Plazmaz)"
         description = "PivotalTracker token (Created as part of PasteHunter)"

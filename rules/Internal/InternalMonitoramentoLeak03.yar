@@ -1,4 +1,4 @@
-rule internalMonitoramentoLeak12
+rule InternalMonitoramentoLeak03
 {
     meta:
         author = "@ntddk"
@@ -6,8 +6,8 @@ rule internalMonitoramentoLeak12
         reference = "https://github.com/kevthehermit/PasteHunter"
 
     strings:
-        $a = "DiscordRelay.BotToken" nocase
-        $b = "discordapp.com/api/webhooks" nocase
+        $a = /(xox(p|b|o|a)-[0-9]{9,12}-[0-9]{9,12}-[0-9]{9,12}-[a-z0-9]{32})/
+        $b = "hooks.slack.com" nocase
     condition:
         any of them
 }

@@ -1,4 +1,4 @@
-rule internalMonitoramentoLeak02
+rule InternalMonitoramentoLeak02
 
 {
     meta:

@@ -1,12 +1,12 @@
-rule internalMonitoramentoLeak07
+rule InternalMonitoramentoLeak08
 {
     meta:
-        author = "@ntddk"
+        author = "@KevTheHermit"
         info = "Part of PasteHunter"
         reference = "https://github.com/kevthehermit/PasteHunter"
 
     strings:
-        $a = /[h|H][e|E][r|R][o|O][k|K][u|U].*[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}/
+        $a = /\bAIza.{35}\b/
     condition:
         any of them
 }
